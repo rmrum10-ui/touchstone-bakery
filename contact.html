@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="bakery-logo_c.png" alt="North Star Bakery logo">
+
+        <h1>Contact North Star Bakery</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Order or Send an Inquiry</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Order &amp; Inquiry Details</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9]{10}"
+                            placeholder="1234567890"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="date">Preferred Date:</label>
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="quantity">Quantity:</label>
+                        <input
+                            type="number"
+                            id="quantity"
+                            name="quantity"
+                            min="1"
+                            max="50"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="message">Message or Order Details:</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            cols="30"
+                            required></textarea>
+                    </p>
+
+                    <button type="submit">Submit Inquiry</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
